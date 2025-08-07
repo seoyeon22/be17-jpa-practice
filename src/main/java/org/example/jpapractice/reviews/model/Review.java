@@ -1,10 +1,12 @@
-package org.example.jpapractice.reviews;
+package org.example.jpapractice.reviews.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.example.jpapractice.book.model.Book;
+
 
 @Getter
 @Entity

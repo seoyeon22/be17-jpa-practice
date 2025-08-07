@@ -2,7 +2,7 @@ package org.example.jpapractice.book.model;
 
 import lombok.Builder;
 import lombok.Getter;
-import org.example.jpapractice.reviews.ReviewDto;
+import org.example.jpapractice.reviews.model.ReviewDto;
 
 import java.util.List;
 
