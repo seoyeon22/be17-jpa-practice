@@ -1,9 +1,10 @@
-package org.example.jpapractice.reviews;
+package org.example.jpapractice.reviews.model;
 
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.example.jpapractice.book.model.Book;
 
 public class ReviewDto {
     @Getter
@@ -12,12 +13,13 @@ public class ReviewDto {
     public static class Register {
         private String content;
         private Integer rating;
+        private Integer book_id;
 
-        public Review toEntity(Book book) {
+        public Review toEntity() {
             Review entity = Review.builder()
                     .content(content)
                     .rating(rating)
-                    .book(book)
+                    .book(Book.builder().idx(book_id).build())
                     .build();
             return entity;
         }
